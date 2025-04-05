@@ -3,7 +3,147 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+        />
+        <script type="module" src="/src/ts/main.ts" defer></script>
         <title>Pepper's peppers</title>
     </head>
-    <body></body>
+    <body>
+        <main>
+            <section class="lazy-bg" id="home" data-bg="/parallax1.jpg">
+                <div class="home-wrapper">
+                    <div class="text">
+                        <p class="typewriter" data-duration="2000" data-text="Hey, I'm Ben"></p>
+                    </div>
+                </div>
+            </section>
+            <section class="lazy-bg" id="about" data-bg="/parallax2.jpg">
+                <div class="about-wrapper">
+                    <div class="collage">
+                        <img src="/collage.png" alt="" />
+                    </div>
+                    <div class="intro">
+                        <h2>About me</h2>
+                        <p>
+                            I'm into cars, especially modded builds, JDMs, and hypercars. During
+                            vacations, I would borrow my uncle's camera and spend lots of time
+                            taking photos of scenery, cars, and streets. When I'm not touching
+                            grass, I'd probably be coding something for fun while listening to my
+                            playlist. Rainy days also hits diff for me.
+                        </p>
+                    </div>
+                </div>
+            </section>
+            <section class="lazy-bg" id="playlist" data-bg="/parallax3.jpg">
+                <div class="playlist-wrapper">
+                    <div class="playlist">
+                        <iframe
+                            style="border-radius: 12px"
+                            src="https://open.spotify.com/embed/playlist/4aI9fNxclGF3Wz8Tk9UuUd?utm_source=generator&theme=0"
+                            width="100%"
+                            height="450"
+                            frameborder="0"
+                            allowfullscreen=""
+                            allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+                            loading="lazy"
+                        ></iframe>
+                    </div>
+                    <div class="playlist-desc">
+                        <p>This is what I usually listen to.</p>
+                        <br />
+                        <p>
+                            And ocasionally
+                            <a
+                                href="https://open.spotify.com/playlist/37i9dQZF1DXapA9ZXglqsQ?si=b66ba639fcc54834"
+                                target="_blank"
+                                ><u>Joe Hisaishi (久石譲)</u></a
+                            >
+                        </p>
+                    </div>
+                </div>
+            </section>
+            <section class="lazy-bg" id="projects" data-bg="/parallax4.jpg">
+                <div class="carousel">
+                    <div class="arrow" id="prev"><i class="bi bi-arrow-left-circle"></i></div>
+                    <div class="arrow" id="next"><i class="bi bi-arrow-right-circle"></i></div>
+
+                    <div class="carousel-viewport">
+                        <div class="carousel-items">
+                            <article class="carousel-item">
+                                <div class="left">
+                                    <div class="carousel-img-container">
+                                        <img src="/boids-simulation.png" />
+                                    </div>
+                                    <div class="buttons">
+                                        <a href="https://boids-react.pepper.fyi" target="_blank"
+                                            ><button class="project-buttons">Take a peek</button></a
+                                        >
+                                        <a
+                                            href="https://github.com/0x5b62656e5d/boids-react"
+                                            target="_blank"
+                                            ><button class="project-buttons">View code</button></a
+                                        >
+                                    </div>
+                                </div>
+                                <div class="right">
+                                    <h2 class="project-title">01 - Boids simulation</h2>
+                                    <p>
+                                        This was a project I did for my artificial intelligence
+                                        class in high school. I was learning react at the time, so I
+                                        decided to use Vite, React with Typescript to make this
+                                        project interactive. It's about simulating how birds like to
+                                        flock together, but at the same time, don't want to stay too
+                                        close to each other.
+                                    </p>
+                                </div>
+                            </article>
+                            <article class="carousel-item coming-soon">
+                                <p>More projects coming soon c:</p>
+                            </article>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="lazy-bg" id="contact" data-bg="/parallax5.jpg">
+                <div class="contact-wrapper">
+                    <h1>Contact me</h1>
+                    <div class="contact-options">
+                        <div class="contacts github">
+                            <a href="https://github.com/0x5b62656e5d/" target="_blank"
+                                ><i class="bi bi-github"></i
+                            ></a>
+                            <p>0x5b62656e5d</p>
+                        </div>
+                        <div class="contacts linkedin">
+                            <a href="https://www.linkedin.com/in/benjamin-kou/" target="_blank"
+                                ><i class="bi bi-linkedin"></i
+                            ></a>
+                            <p>Ben Kou</p>
+                        </div>
+                        <div class="contacts discord">
+                            <a
+                                href="https://discordapp.com/users/936640230272942091"
+                                target="_blank"
+                            >
+                                <i class="bi bi-discord"></i>
+                            </a>
+                            <p>pepper4340</p>
+                        </div>
+                        <div class="contacts instagram">
+                            <a href="https://instagram.com/butylbenzene/" target="_blank">
+                                <i class="bi bi-instagram"></i>
+                            </a>
+                            <p>@butylbenzene</p>
+                        </div>
+                        <div class="contacts email">
+                            <a href="mailto:1@1.com"><i class="bi bi-envelope"></i></a>
+                            <p>1@1.com</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </body>
 </html>
