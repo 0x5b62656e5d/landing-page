@@ -1,6 +1,5 @@
 import "./typewriter.ts";
 import "./carousel.ts";
-import "./lazyloadparallax.ts";
 
 import "../styles/main.css";
 import "../styles/parallax.css";

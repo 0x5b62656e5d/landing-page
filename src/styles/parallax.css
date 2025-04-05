@@ -1,4 +1,4 @@
-.lazy-bg {
+section {
     position: relative;
     height: 100%;
 
@@ -7,13 +7,6 @@
     background-repeat: no-repeat;
     background-size: cover;
     z-index: 0;
-
-    backdrop-filter: blur(3px);
-    transition: backdrop-filter 0.5s ease-out;
-}
-
-.lazy-bg.loaded {
-    backdrop-filter: blur(0);
 }
 
 section::before {
@@ -31,4 +24,24 @@ section::before {
 section > * {
     position: relative;
     z-index: 2;
+}
+
+section:nth-child(1) {
+    background-image: url('/parallax1.webp');
+}
+
+section:nth-child(2) {
+    background-image: url('/parallax2.webp');
+}
+
+section:nth-child(3) {
+    background-image: url('/parallax3.webp');
+}
+
+section:nth-child(4) {
+    background-image: url('/parallax4.webp');
+}
+
+section:nth-child(5) {
+    background-image: url('/parallax5.webp');
 }
