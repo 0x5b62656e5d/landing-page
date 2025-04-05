@@ -1,0 +1,14 @@
+.about-wrapper {
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+    display: grid;
+    grid-template-columns: 3fr 2fr;
+
+    gap: 80px;
+    width: 80%;
+}
+
+.collage img {
+    width: 100%;
+}

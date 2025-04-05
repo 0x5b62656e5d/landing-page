@@ -1,0 +1,33 @@
+.contact-wrapper {
+    display: grid;
+    grid-template-rows: 1fr 4fr;
+    padding: 20px;
+    height: 70%;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact-wrapper > h1 {
+    text-align: center;
+    font-size: 64px;
+}
+
+.contact-options {
+    display: grid;
+    grid-template-rows: repeat(4, 1fr);
+    width: 400px;
+    gap: 24px;
+}
+
+.contacts {
+    display: grid;
+    grid-template-columns: 1fr 7fr;
+    font-size: 26px;
+    text-align: left;
+    justify-content: center;
+    align-items: center;
+}
+
+.contacts p {
+    font-size: 22px;
+}

@@ -1,0 +1,95 @@
+@media only screen and (max-width: 600px) {
+    .text p {
+        font-size: 42px !important;
+    }
+
+    .about-wrapper {
+        grid-template-columns: unset !important;
+        grid-template-rows: auto;
+        gap: 30px;
+    }
+
+    .intro > h2 {
+        font-size: 22px !important;
+        text-align: center;
+    }
+
+    .intro > p {
+        font-size: 16px !important;
+        text-align: center;
+    }
+
+    .carousel {
+        width: 95% !important;
+    }
+
+    .carousel-viewport {
+        width: 75% !important;
+    }
+
+    .carousel-item > * > h2 {
+        font-size: 22px !important;
+        text-align: center;
+    }
+
+    .carousel-item > * > p {
+        font-size: 16px !important;
+        text-align: center;
+    }
+
+    .coming-soon {
+        text-align: center;
+    }
+
+    .contact-wrapper {
+        gap: 20px;
+    }
+
+    .contact-wrapper h1 {
+        font-size: 48px;
+    }
+
+    .contact-options {
+        width: 250px;
+        gap: 16px;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .contact-options {
+        width: 300px;
+    }
+}
+
+@media only screen and (max-width: 992px) {
+    .about-wrapper {
+        gap: 50px;
+    }
+
+    .playlist-wrapper {
+        width: 60% !important;
+    }
+
+    .carousel-item {
+        grid-template-rows: auto;
+        grid-template-columns: unset !important;
+        gap: 20px;
+        padding: 24px !important;
+    }
+
+    .carousel-img-container {
+        width: 60%;
+    }
+}
+
+@media only screen and (max-width: 1300px) {
+    .carousel {
+        width: 90% !important;
+    }
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1500px) {
+    .about-wrapper {
+        grid-template-columns: 4fr 3fr;
+    }
+}

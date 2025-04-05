@@ -1,0 +1,105 @@
+.carousel {
+    width: 80%;
+    display: flex;
+    justify-content: center;
+
+    position: relative;
+}
+
+.carousel .arrow {
+    position: absolute;
+    display: flex;
+    width: 45px;
+    height: 45px;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+    font-size: 40px;
+    color: white;
+    cursor: pointer;
+    transition: all 0.15s ease-in-out;
+}
+
+.carousel .arrow:hover {
+    transform: scale(1.05);
+}
+
+.carousel #prev {
+    left: 0px;
+}
+
+.carousel #next {
+    right: 0px;
+}
+
+.carousel-viewport {
+    width: 80%;
+    overflow: hidden;
+}
+
+.carousel-items {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    position: relative;
+    transition: all 0.4s ease-in-out;
+}
+
+.carousel-item {
+    flex: 0 0 100%;
+    border: 2px solid #bdc0ba;
+    border-radius: 32px;
+    padding: 16px;
+
+    display: grid;
+    grid-template-columns: 2fr 3fr;
+
+    backdrop-filter: blur(6px);
+    width: 100%;
+}
+
+.carousel-item .left {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.carousel-img-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.carousel-item .left .buttons {
+    display: flex;
+    gap: 20px;
+}
+
+.carousel-item .left .buttons a button {
+    font-size: 14px;
+}
+
+.carousel-item .left img {
+    border-radius: 16px;
+    width: 80%;
+}
+
+.carousel-item .right {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.coming-soon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.coming-soon p {
+    font-size: 24px;
+}

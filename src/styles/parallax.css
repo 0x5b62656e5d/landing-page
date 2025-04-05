@@ -1,0 +1,34 @@
+.lazy-bg {
+    position: relative;
+    height: 100%;
+
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: 0;
+
+    backdrop-filter: blur(3px);
+    transition: backdrop-filter 0.5s ease-out;
+}
+
+.lazy-bg.loaded {
+    backdrop-filter: blur(0);
+}
+
+section::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.58);
+    z-index: 1;
+    pointer-events: none;
+}
+
+section > * {
+    position: relative;
+    z-index: 2;
+}

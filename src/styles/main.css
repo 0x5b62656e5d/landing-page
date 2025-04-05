@@ -1,0 +1,63 @@
+@import url("https://api.fontshare.com/v2/css?f[]=hoover@1&display=swap");
+@import url("https://api.fontshare.com/v2/css?f[]=zodiak@1&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    color: #bdc0ba;
+
+    font-family: "Hoover", sans-serif;
+    scroll-behavior: smooth;
+    scrollbar-width: none;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+body {
+    background-color: #2b2b2b;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+section {
+    scroll-snap-align: start;
+    scroll-snap-stop: always;
+    min-height: 100dvh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+a {
+    all: unset;
+    cursor: pointer;
+}
+
+button {
+    color: #e6e8e5;
+    border: 1px solid #949692;
+    border-radius: 16px;
+    background-color: transparent;
+    padding: 10px;
+    transition: all 0.15s ease-in-out;
+    cursor: pointer;
+}
+
+button:hover {
+    transform: scale(1.05);
+}
+
+p {
+    font-size: 18px;
+}
+
+h2 {
+    font-size: 28px;
+}

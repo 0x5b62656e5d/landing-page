@@ -1,0 +1,23 @@
+.playlist-wrapper {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+.playlist {
+    width: 100%;
+}
+
+.playlist-desc {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.playlist-desc > p {
+    text-align: center;
+}

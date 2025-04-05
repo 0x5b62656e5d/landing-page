@@ -1,0 +1,26 @@
+.home-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.text p {
+    width: auto;
+    font-family: "Zodiak", serif;
+    font-weight: 600;
+    font-size: 64px;
+
+    border-right: 4px solid #bdc0ba;
+    animation: cursorBlink 0.75s step-end infinite;
+}
+
+@keyframes cursorBlink {
+    from,
+    to {
+        border-color: transparent;
+    }
+    50% {
+        border-color: #bdc0ba;
+    }
+}
