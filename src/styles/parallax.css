@@ -7,12 +7,6 @@ section {
     background-repeat: no-repeat;
     background-size: cover;
     z-index: 0;
-
-    transform: translateZ(0);
-    will-change: background-position;
-    backface-visibility: hidden;
-    -webkit-transform: translateZ(0);
-    -webkit-backface-visibility: hidden;
 }
 
 section::before {
