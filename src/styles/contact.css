@@ -1,15 +1,19 @@
 .contact-wrapper {
     display: grid;
-    grid-template-rows: 1fr 4fr;
+    grid-template-rows: 1fr 3fr;
     padding: 20px;
     height: 70%;
     justify-content: center;
     align-items: center;
 }
 
-.contact-wrapper > h1 {
+.contact-header h1 {
     text-align: center;
     font-size: 64px;
+}
+
+.contact-header p {
+    text-align: center;
 }
 
 .contact-options {
