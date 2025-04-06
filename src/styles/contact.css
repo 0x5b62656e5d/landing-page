@@ -31,3 +31,11 @@
 .contacts p {
     font-size: 22px;
 }
+
+.contacts a {
+    transition: all 0.15s ease-in-out;
+}
+
+.contacts a:hover {
+    transform: scale(1.05);
+}
