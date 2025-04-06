@@ -1,3 +1,14 @@
+@media (prefers-reduced-motion: reduce) {
+    * {
+        animation: none !important;
+        transition-duration: 0s !important;
+    }
+
+    section {
+        background-attachment: scroll !important;
+    }
+}
+
 @media only screen and (max-width: 600px) {
     section:nth-child(1) {
         background-image: url('/mobile-parallax1.webp');
