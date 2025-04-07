@@ -12,3 +12,7 @@
 .collage img {
     width: 100%;
 }
+
+.intro p {
+    font-weight: 200;
+}
