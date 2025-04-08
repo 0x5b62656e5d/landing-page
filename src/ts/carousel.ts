@@ -46,6 +46,25 @@ const loadCarousel = () => {
         }
     });
 
+    (document.querySelectorAll(".carousel .arrow") as NodeListOf<HTMLElement>).forEach((e) => {
+        e.addEventListener("transitionstart", () => {
+            if (leftValue === 0) {
+                (document.querySelector(".carousel #prev") as HTMLElement).style.setProperty("opacity", "0.75");
+            } else {
+                (document.querySelector(".carousel #prev") as HTMLElement).style.setProperty("opacity", "1.0");
+            }
+    
+            if (
+                Math.abs(leftValue) >
+                carouselWrap.getBoundingClientRect().width * (allCarouselItems.length - 2)
+            ) {
+                (document.querySelector(".carousel #next") as HTMLElement).style.setProperty("opacity", "0.75");
+            } else {
+                (document.querySelector(".carousel #next") as HTMLElement).style.setProperty("opacity", "1.0");
+            }
+        });
+    });
+
     //* Only for "Coming soon"
     allCarouselItems[allCarouselItems.length - 1].style.height = `${
         allCarouselItems[0].getBoundingClientRect().height
