@@ -59,13 +59,17 @@
     }
 
     .carousel-item > * > h2 {
-        font-size: 22px !important;
+        font-size: 20px !important;
         text-align: center;
     }
 
     .carousel-item > * > p {
-        font-size: 16px !important;
+        font-size: 14px !important;
         text-align: center;
+    }
+
+    .project-buttons {
+        padding: 8px;
     }
 
     .coming-soon {
@@ -77,7 +81,12 @@
     }
 
     .contact-wrapper h1 {
-        font-size: 48px;
+        font-size: 42px;
+    }
+
+    .contact-header p {
+        font-size: 16px;
+        width: 70%;
     }
 
     .contact-options {

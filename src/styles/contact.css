@@ -7,6 +7,13 @@
     align-items: center;
 }
 
+.contact-header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
 .contact-header h1 {
     text-align: center;
     font-size: 64px;
@@ -14,6 +21,12 @@
 
 .contact-header p {
     text-align: center;
+}
+
+.contact-options-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .contact-options {
