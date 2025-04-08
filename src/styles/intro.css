@@ -12,8 +12,8 @@
     font-size: 64px;
 
     border-right: 4px solid #bdc0ba;
-    animation: cursorBlink 0.75s step-end infinite;
-    animation: floatUp 1s ease-out forwards;
+    animation: cursorBlink 0.75s step-end infinite,
+        floatUp 1s ease-out forwards;
 }
 
 @keyframes cursorBlink {
