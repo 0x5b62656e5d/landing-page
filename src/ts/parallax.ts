@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", () => {
-    if (/Safari/.test(navigator.userAgent) && /Apple Computer/.test(navigator.vendor)) {
+    if (/AppleWebKit/.test(navigator.userAgent) && /Apple/.test(navigator.vendor)) {
         const section = document.querySelectorAll("section") as NodeListOf<HTMLElement>;
 
         section.forEach(e => e.style.setProperty("transform", "translateZ(0)"));
