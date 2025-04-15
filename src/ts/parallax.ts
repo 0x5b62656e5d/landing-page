@@ -3,6 +3,7 @@ document.addEventListener("DOMContentLoaded", () => {
         const section = document.querySelectorAll("section") as NodeListOf<HTMLElement>;
 
         section.forEach(e => {
+            e.style.setProperty("background-attachment", "scroll");
             e.style.setProperty("transform", "translateZ(0)");
             e.style.setProperty("will-change", "background-position");
             e.style.setProperty("backface-visibility", "hidden");
