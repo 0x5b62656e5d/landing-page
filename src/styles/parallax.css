@@ -29,7 +29,7 @@ section > * {
 section:nth-child(1) {
     background-image: url("https://cdn.pepper.fyi/landing-page/parallax1.webp");
 
-    animation: fadeIn 0.5s ease-out forwards;
+    animation: fadeIn 1.5s ease-out forwards;
 }
 
 section:nth-child(2) {
