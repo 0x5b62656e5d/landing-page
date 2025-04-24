@@ -6,7 +6,7 @@ class Typewriter {
     constructor(typewriter: Element, text: string) {
         this.typewriterElement = typewriter;
         this.fullText = text;
-        this.write();
+        setTimeout(() => this.write(), 1000);
     }
 
     private write() {
